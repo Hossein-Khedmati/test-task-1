@@ -1,0 +1,37 @@
+import * as React from 'react';
+import type { SVGProps } from 'react';
+
+const InstagramIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M7.78216 3.00085H16.2169C19.165 3.00085 21 5.08204 21 8.02723V15.9745C21 18.9197 19.165 21.0009 16.2159 21.0009H7.78216C4.83405 21.0009 3 18.9197 3 15.9745V8.02723C3 5.08204 4.84281 3.00085 7.78216 3.00085Z"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M11.8435 8.82849C9.90925 8.82849 8.34082 10.397 8.34082 12.3312C8.34082 14.2655 9.90925 15.8339 11.8435 15.8339C13.7778 15.8339 15.3462 14.2655 15.3462 12.3312C15.3462 10.397 13.7778 8.82849 11.8435 8.82849Z"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M16.8641 7.3649V7.4339M17.1461 7.37991C17.1461 7.53691 17.0191 7.66391 16.8621 7.66391C16.7051 7.66391 16.5771 7.53691 16.5771 7.37991C16.5771 7.22291 16.7051 7.09491 16.8621 7.09491C17.0191 7.09491 17.1461 7.22291 17.1461 7.37991Z"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export default InstagramIcon;

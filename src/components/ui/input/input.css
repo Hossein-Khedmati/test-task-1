@@ -1,0 +1,256 @@
+@layer components {
+  .input {
+    @apply focus-within:border-primary-500 relative flex h-14 w-100 cursor-pointer items-center gap-2.5 rounded-[20px] border-1 border-transparent bg-neutral-50 px-5 transition-colors focus:outline-none dark:bg-neutral-700;
+    input {
+      @apply h-full text-base font-medium text-neutral-400 placeholder:text-base placeholder:font-medium placeholder:text-neutral-400;
+    }
+    svg {
+      @apply text-neutral-400 h-5 w-5;              
+    }
+  }
+
+  .inputLabel {
+    @apply mb-2 font-semibold text-neutral-500 dark:text-neutral-300;
+  }
+
+  .inputMessage {
+    @apply mt-2 font-semibold;
+  }
+
+  /* Primary */
+  .input-primary {
+    @apply focus-within:border-primary-500;
+  }
+
+  .input-primary.input-outline {
+    @apply focus-within:bg-primary-500/10 border-primary-500 border;
+  }
+
+  .input-primary.input-fill {
+    @apply bg-primary-500 focus-within:bg-primary-500/90 text-blue-300;
+  }
+
+  .input-primary.input-ghost {
+    @apply text-primary-500 focus-within:bg-primary-500/10 border-transparent;
+  }
+
+  .input-primary span svg {
+    @apply stroke-primary-500;
+  }
+
+  /* Secondary */
+  .input-secondary {
+    @apply focus-within:bg-secondary-500/90;
+  }
+
+  .input-secondary.input-outline {
+    @apply border-secondary-500 text-secondary-500 focus-within:bg-secondary-500/10 border;
+  }
+
+  .input-secondary.input-fill {
+    @apply bg-secondary-500 focus-within:bg-secondary-500/90 text-white;
+  }
+
+  .input-secondary.input-ghost {
+    @apply text-secondary-500 focus-within:bg-secondary-500/10 border-transparent;
+  }
+
+  .input-secondary span svg {
+    @apply stroke-secondary-500;
+  }
+
+  /* Success */
+  .input-success {
+    @apply text-success-400 focus-within:border-success-400 border-success-400;
+  }
+
+  .input-success.input-outline {
+    @apply border-success-400 text-success-400 focus-within:bg-success-400/30 border;
+  }
+
+  .input-success.input-fill {
+    @apply bg-success-400 focus-within:bg-success-400/90 text-white;
+  }
+
+  .input-success.input-ghost {
+    @apply text-success-400 focus-within:bg-success-400/30 border-transparent;
+  }
+
+  .input-success span svg {
+    @apply stroke-success-400;
+  }
+
+  /* Warning */
+  .input-warning {
+    @apply text-warning-400 focus-within:border-warning-400 border-warning-400;
+  }
+
+  .input-warning.input-outline {
+    @apply border-warning-400 text-warning-400 focus-within:bg-warning-400/10 border;
+  }
+
+  .input-warning.input-fill {
+    @apply bg-warning-400 focus-within:bg-warning-400/90 text-white;
+  }
+
+  .input-warning.input-ghost {
+    @apply text-warning-400 focus-within:bg-warning-400/10 border-transparent;
+  }
+
+  .input-warning span svg {
+    @apply stroke-warning-400;
+  }
+
+  /* error */
+  .input-error {
+    @apply text-error-400 focus-within:border-error-400 border-error-400;
+  }
+
+  .input-error.input-outline {
+    @apply border-error-400 text-error-400 focus-within:bg-error-400/10 border;
+  }
+
+  .input-error.input-fill {
+    @apply bg-error-400 focus-within:bg-error-400/90 text-white;
+  }
+
+  .input-error.input-ghost {
+    @apply text-error-400 focus-within:bg-error-400/10 border-transparent;
+  }
+
+  .input-error span svg {
+    @apply stroke-error-400;
+  }
+
+  /* Info */
+  .input-info {
+    @apply focus-within:bg-info-400/90;
+  }
+
+  .input-info.input-outline {
+    @apply border-info-400 text-info-400 focus-within:bg-info-400/10 border;
+  }
+
+  .input-info.input-fill {
+    @apply bg-info-400 focus-within:bg-info-400/90 text-white;
+  }
+
+  .input-info.input-ghost {
+    @apply text-info-400 focus-within:bg-info-400/10 border-transparent;
+  }
+
+  .input-info span svg {
+    @apply stroke-info-400;
+  }
+
+  /* Neutral */
+  .input-neutral {
+    @apply focus-within:bg-neutral-500/90;
+  }
+
+  .input-neutral.input-outline {
+    @apply border border-neutral-500 text-neutral-500 focus-within:bg-neutral-500/10;
+  }
+
+  .input-neutral.input-fill {
+    @apply bg-neutral-500 text-white focus-within:bg-neutral-500/90;
+  }
+
+  .input-neutral.input-ghost {
+    @apply border-transparent text-neutral-500 focus-within:bg-neutral-500/10;
+  }
+
+  .input-neutral span svg {
+    @apply stroke-neutral-500;
+  }
+
+  /* Full width */
+  .input-fullWidth {
+    @apply w-full;
+  }
+
+  /* Disabled */
+  .input-disabled {
+    @apply pointer-events-none cursor-pointer opacity-50;
+  }
+}
+
+/* Size TextInput */
+@utility input-base {
+  @apply gap-2.5;
+  input {
+    @apply placeholder:text-neutral-400 dark:placeholder:text-neutral-400;
+  }
+  svg {
+    @apply text-neutral-400;
+  }
+}
+
+@utility input-sm {
+  @apply input-base h-10 w-75 rounded-[12px] px-5;
+  input {
+    @apply text-sm font-normal placeholder:text-sm placeholder:font-normal;
+  }
+  svg {
+    @apply h-4 w-4;
+  }
+}
+
+@utility input-md {
+  @apply input-base h-12 w-100 rounded-[14px] px-5;
+  input {
+    @apply text-base font-medium placeholder:text-base placeholder:font-medium;
+  }
+  svg {
+    @apply h-4.5 w-4.5;
+  }
+}
+
+@utility input-lg {
+  @apply input-base h-14 w-125 rounded-[16px] px-6;
+  input {
+    @apply text-lg font-medium placeholder:text-lg placeholder:font-medium;
+  }
+  svg {
+    @apply h-5 w-5;
+  }
+}
+
+/* Light Bckground */
+@utility input-sm-light {
+  @apply input-sm bg-neutral-50 dark:bg-neutral-900;
+}
+
+@utility input-md-light {
+  @apply input-md bg-neutral-50 dark:bg-neutral-900;
+}
+
+@utility input-lg-light {
+  @apply input-lg bg-neutral-50 dark:bg-neutral-900;
+}
+
+/* Label size */
+@utility input-sm-label {
+  @apply text-sm;
+}
+
+@utility input-md-label {
+  @apply text-base;
+}
+
+@utility input-lg-label {
+  @apply text-lg;
+}
+
+/* Label Message */
+@utility input-sm-inputMessage {
+  @apply text-sm;
+}
+
+@utility input-md-inputMessage {
+  @apply text-base;
+}
+
+@utility input-lg-inputMessage {
+  @apply text-lg;
+}
