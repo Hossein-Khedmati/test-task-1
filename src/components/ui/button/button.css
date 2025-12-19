@@ -1,0 +1,305 @@
+@layer components {
+  .button {
+    @apply button-text-md inline-flex h-fit w-fit cursor-pointer items-center justify-center gap-2 transition-all focus:outline-none active:scale-95;
+  }
+
+  /* Primary */
+  .button-primary {
+    @apply hover:bg-primary-300 active:bg-primary-100;
+  }
+
+  .button-primary.button-fill {
+    @apply bg-primary-500 hover:bg-primary-400 active:bg-primary-300 text-neutral-0;
+  }
+
+  .button-primary.button-outline {
+    @apply border-primary-500 text-primary-500 hover:bg-primary-500 active:bg-primary-400 hover:text-neutral-0 border-2 bg-transparent; 
+  }
+
+  .button-primary.button-ghost {
+    @apply hover:bg-primary-100 active:bg-primary-200 text-primary-500 bg-transparent;
+  }
+
+  .button-primary.button-link {
+    @apply text-primary-500 bg-transparent hover:underline hover:opacity-80;
+  }
+
+  .button-primary.button-disabled {
+    @apply bg-primary-100 dark:bg-primary-600 pointer-events-none cursor-not-allowed dark:text-neutral-200;
+  }
+
+  .button-primary.button-outline.button-disabled { 
+    @apply border-primary-200 text-primary-200 dark:text-primary-600 dark:border-primary-600 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-primary.button-ghost.button-disabled {
+    @apply text-primary-200 dark:text-primary-600 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-primary.button-link.button-disabled {
+    @apply text-primary-200 dark:text-primary-600 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-primary.button-ghost span svg,
+  .button-primary.button-outline span svg,
+  .button-primary.button-link span svg {
+    @apply stroke-primary-500;
+  }
+
+  /* Secondary */
+  .button-secondary {
+    @apply hover:bg-secondary-400 active:bg-secondary-300;
+  }
+
+  .button-secondary.button-fill {
+    @apply bg-secondary-500 hover:bg-secondary-400 active:bg-secondary-300 text-neutral-0;
+  }
+
+  .button-secondary.button-outline {
+    @apply border-secondary-500 text-secondary-500 hover:bg-secondary-500 active:bg-secondary-400 hover:text-neutral-0 border-2 bg-transparent;
+  }
+
+  .button-secondary.button-ghost {
+    @apply hover:bg-secondary-100 active:bg-secondary-200 text-secondary-500 bg-transparent;
+  }
+
+  .button-secondary.button-link {
+    @apply text-secondary-600 bg-transparent hover:underline hover:opacity-80;
+  }
+
+  .button-secondary.button-disabled {
+    @apply bg-secondary-100 dark:bg-secondary-600 text-neutral-0 dark:text-neutral-200 pointer-events-none cursor-not-allowed;
+  }
+
+  .button-secondary.button-outline.button-disabled {
+    @apply border-secondary-200 text-secondary-200 dark:text-secondary-600 dark:border-secondary-600 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-secondary.button-ghost.button-disabled {
+    @apply text-secondary-200 dark:text-secondary-600 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-secondary.button-link.button-disabled {
+    @apply text-secondary-200 dark:text-secondary-600 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-secondary.button-ghost span svg,
+  .button-secondary.button-outline span svg,
+  .button-secondary.button-link span svg {
+    @apply stroke-secondary-500;
+  }
+
+  /* Success */
+  .button-success {
+    @apply hover:bg-success-300 active:bg-success-200;
+  }
+
+  .button-success.button-fill {
+    @apply bg-success-400 hover:bg-success-300 active:bg-success-200 text-neutral-0;
+  }
+
+  .button-success.button-outline {
+    @apply border-success-400 text-success-400 hover:bg-success-400 active:bg-success-300 hover:text-neutral-0 border-2 bg-transparent;
+  }
+
+  .button-success.button-ghost {
+    @apply hover:bg-success-50 active:bg-success-100 text-success-400 bg-transparent;
+  }
+
+  .button-success.button-link {
+    @apply text-success-400 bg-transparent hover:underline hover:opacity-80;
+  }
+
+  .button-success.button-disabled {
+    @apply bg-success-100 dark:bg-success-400 text-neutral-0 pointer-events-none cursor-not-allowed;
+  }
+
+  .button-success.button-outline.button-disabled {
+    @apply border-success-100 text-success-100 dark:text-success-400 dark:border-success-400 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-success.button-ghost.button-disabled {
+    @apply text-success-100 dark:text-success-400 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-success.button-link.button-disabled {
+    @apply text-success-100 dark:text-success-400 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+  .button-success.button-ghost span svg,
+  .button-success.button-outline span svg,
+  .button-success.button-link span svg {
+    @apply stroke-success-400;
+  }
+
+  /* Error */
+  .button-error {
+    @apply hover:bg-error-300 active:bg-error-200;
+  }
+
+  .button-error.button-fill {
+    @apply bg-error-400 hover:bg-error-300 active:bg-error-200 active:text-neutral-0 text-neutral-0;
+  }
+
+  .button-error.button-outline {
+    @apply border-error-400 text-error-400 hover:bg-error-400 active:bg-error-300 hover:text-neutral-0 border-2;
+  }
+
+  .button-error.button-ghost {
+    @apply hover:bg-error-50 active:bg-error-100 text-error-400 bg-transparent;
+  }
+
+  .button-error.button-link {
+    @apply text-error-400 bg-transparent hover:underline hover:opacity-80;
+  }
+
+  .button-error.button-disabled {
+    @apply bg-error-100 dark:bg-error-400 text-neutral-0 pointer-events-none cursor-not-allowed;
+  }
+
+  .button-error.button-outline.button-disabled {
+    @apply border-error-100 text-error-100 dark:text-error-400 dark:border-error-400 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-error.button-ghost.button-disabled {
+    @apply text-error-100 dark:text-error-400 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-error.button-link.button-disabled {
+    @apply text-error-100 dark:text-error-400 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-error.button-ghost span svg,
+  .button-error.button-outline span svg,
+  .button-error.button-link span svg {
+    @apply stroke-error-400;
+  }
+
+  /* Gray */
+  .button-gray {
+    @apply hover:bg-neutral-200 active:bg-neutral-300 dark:hover:bg-neutral-800 dark:active:bg-neutral-900;
+  }
+
+  .button-gray.button-fill {
+    @apply dark:text-neutral-0 bg-neutral-100 text-neutral-800 hover:bg-neutral-200 active:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-800 dark:active:bg-neutral-900;
+  }
+
+  .button-gray.button-outline {
+    @apply dark:text-neutral-0 border-2 border-neutral-100 text-neutral-800 hover:bg-neutral-100 active:bg-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-700 dark:active:bg-neutral-800;
+  }
+
+  .button-gray.button-ghost {
+    @apply dark:text-neutral-0 bg-transparent text-neutral-800 hover:bg-neutral-100 active:bg-neutral-200 dark:border-neutral-700 dark:hover:bg-neutral-700 dark:active:bg-neutral-800;
+  }
+
+  .button-gray.button-link {
+    @apply dark:text-neutral-0 bg-transparent text-neutral-800 hover:underline hover:opacity-80 dark:hover:text-neutral-200 dark:hover:underline;
+  }
+
+  .button-gray.button-disabled {
+    @apply pointer-events-none cursor-not-allowed bg-neutral-100 text-neutral-300 dark:bg-neutral-800 dark:text-neutral-600;
+  }
+
+  .button-gray.button-outline.button-disabled {
+    @apply pointer-events-none cursor-not-allowed border-neutral-100 bg-transparent text-neutral-200 dark:border-neutral-600 dark:text-neutral-600;
+  }
+
+  .button-gray.button-ghost.button-disabled {
+    @apply pointer-events-none cursor-not-allowed bg-transparent text-neutral-200 dark:text-neutral-600;
+  }
+
+  .button-gray.button-link.button-disabled {
+    @apply pointer-events-none cursor-not-allowed bg-transparent text-neutral-300 dark:text-neutral-600;
+  }
+
+  .button-gray.button-ghost span svg,
+  .button-gray.button-outline span svg,
+  .button-gray.button-link span svg {
+    @apply stroke-neutral-100 dark:stroke-neutral-700;
+  }
+
+  /* Light */
+  .button-white {
+    @apply hover:bg-neutral-100 active:bg-neutral-200 dark:hover:bg-neutral-800 dark:active:bg-neutral-900;
+  }
+
+  .button-white.button-fill {
+    @apply bg-neutral-0 dark:text-neutral-0 text-neutral-800 hover:bg-neutral-100 active:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-800 dark:active:bg-neutral-900;
+  }
+
+  .button-white.button-outline {
+    @apply border-neutral-0 hover:bg-neutral-0 dark:text-neutral-0 border-2 text-neutral-800 active:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-700 dark:active:bg-neutral-800;
+  }
+
+  .button-white.button-ghost {
+    @apply hover:bg-neutral-0 dark:text-neutral-0 bg-transparent text-neutral-800 active:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-700 dark:active:bg-neutral-800;
+  }
+
+  .button-white.button-link {
+    @apply dark:text-neutral-0 bg-transparent text-neutral-800 hover:underline hover:opacity-80 dark:hover:text-neutral-200 dark:hover:underline;
+  }
+
+  .button-white.button-disabled {
+    @apply bg-neutral-0 pointer-events-none cursor-not-allowed text-neutral-200 dark:bg-neutral-800 dark:text-neutral-600;
+  }
+
+  .button-white.button-outline.button-disabled {
+    @apply border-neutral-0 pointer-events-none cursor-not-allowed bg-transparent text-neutral-200 dark:border-neutral-600 dark:text-neutral-600;
+  }
+
+  .button-white.button-ghost.button-disabled {
+    @apply pointer-events-none cursor-not-allowed bg-transparent text-neutral-200 dark:text-neutral-600;
+  }
+
+  .button-white.button-link.button-disabled {
+    @apply pointer-events-none cursor-not-allowed bg-transparent text-neutral-200 dark:text-neutral-600;
+  }
+
+  .button-neutral.button-ghost span svg,
+  .button-neutral.button-outline span svg,
+  .button-neutral.button-link span svg {
+    @apply stroke-neutral-0 dark:stroke-neutral-700;
+  }
+}
+
+/* Size */
+@utility button-text-xs {
+  @apply rounded-md px-4 py-1;
+}
+
+@utility button-text-sm {
+  @apply rounded-lg px-4 py-2;
+}
+
+@utility button-text-md {
+  @apply rounded-xl px-6 py-3;
+}
+
+@utility button-text-lg {
+  @apply rounded-xl px-8 py-4;
+}
+
+/* Icons */
+@utility button-icon-xs {
+  @apply h-3 w-3 rounded-md p-1;
+}
+
+@utility button-icon-sm {
+  @apply h-3.5 w-3.5 rounded-lg p-2;
+}
+
+@utility button-icon-md {
+  @apply h-4 w-4 rounded-[10px] p-3;
+}
+
+@utility button-icon-lg {
+  @apply h-6 w-6 rounded-xl p-4;
+}
+
+/* Additional styles */
+@utility button-fullWidth {
+  @apply w-full;
+}
+
+@utility button-fullRounded {
+  @apply rounded-full;
+}
