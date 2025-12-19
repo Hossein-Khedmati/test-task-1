@@ -4,10 +4,8 @@ import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 
 import { Select, SelectItem, selectVariants } from './select';
-import { SelectColor, SelectVariant } from './types';
+import { SelectVariant } from './types';
 import { SizeVariant, RadiusVariant, ColorVariant } from '@/components/ui/types';
-import { ref } from 'process';
-import { Variants } from './select.stories';
 
 // Mock the dependencies
 jest.mock('@radix-ui/react-select', () => {
@@ -89,7 +87,7 @@ jest.mock('@radix-ui/react-select', () => {
   );
   ScrollDownButton.displayName = 'SelectScrollDown';
 
-  const Viewport: React.FC<React.HtmlHTMLAttributes<HTMLDivElement>> = ({
+  const Viewport: React.FC<React.HtmlHTMLAttributes<HTMLDivElement> & { className?: string }> = ({
     children,
     className,
     ...props

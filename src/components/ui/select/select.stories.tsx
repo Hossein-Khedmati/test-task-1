@@ -256,7 +256,6 @@ export const GhostSelects: Story = {
   ),
 };
 
-
 export const PersianSample: Story = {
   render: () => (
     <div className="flex flex-wrap gap-4">

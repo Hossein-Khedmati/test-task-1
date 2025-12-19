@@ -88,6 +88,7 @@ export const Select: React.FC<SelectProps> = ({
       disabled={disabled}
     >
       <Comp
+        {...props}
         data-slot="select"
         className={cn(selectVariants({ variant, color, size, fullWidth, rounded }), className)}
         disabled={disabled}

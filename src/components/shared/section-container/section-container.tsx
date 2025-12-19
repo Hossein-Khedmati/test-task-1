@@ -107,7 +107,7 @@ export const SectionContainer = ({
       return child;
     }
 
-    return React.cloneElement(child as React.ReactElement<any>, {
+    return React.cloneElement(child as React.ReactElement<{ activeFilterValue?: string | null }>, {
       activeFilterValue,
     });
   });

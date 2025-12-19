@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Button, buttonVariants } from './button';
+import { Button } from './button';
 import { ButtonColor, ButtonVariant } from './types';
 import React from 'react';
 import userEvent from '@testing-library/user-event';

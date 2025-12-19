@@ -756,13 +756,13 @@ describe('useCarousel error handling', () => {
 
 describe('Carousel with no api', () => {
   test('does not crash when embla api is null', () => {
-    jest.doMock('embla-carousel-react', () => {
-      return jest.fn(() => [
-        { current: null },
-        null, // api is null
-      ]);
-    });
+    const mockEmbla = jest.fn(() => [
+      { current: null },
+      null, // api is null
+    ]);
+    jest.doMock('embla-carousel-react', () => mockEmbla);
 
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const { Carousel, CarouselContent, CarouselItem } = require('./carousel');
 
     expect(() =>

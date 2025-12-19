@@ -60,28 +60,28 @@ export const Basic: Story = {
       <Carousel>
         <CarouselContent>
           <CarouselItem className="basis-1/4 md:basis-1/2">
-            <div className='p-2'>
-              <div className='rounded-md border'>
-                <div className='flex items-center justify-center p-5'>
-                    <span className='text-4xl font-bold'>1</span>
+            <div className="p-2">
+              <div className="rounded-md border">
+                <div className="flex items-center justify-center p-5">
+                  <span className="text-4xl font-bold">1</span>
                 </div>
               </div>
             </div>
           </CarouselItem>
           <CarouselItem className="basis-1/4 md:basis-1/2">
-            <div className='p-2'>
-              <div className='rounded-md border'>
-                <div className='flex items-center justify-center p-5'>
-                    <span className='text-4xl font-bold'>2</span>
+            <div className="p-2">
+              <div className="rounded-md border">
+                <div className="flex items-center justify-center p-5">
+                  <span className="text-4xl font-bold">2</span>
                 </div>
               </div>
             </div>
           </CarouselItem>
           <CarouselItem className="basis-1/4 md:basis-1/2">
-            <div className='p-2'>
-              <div className='rounded-md border'>
-                <div className='flex items-center justify-center p-5'>
-                    <span className='text-4xl font-bold'>3</span>
+            <div className="p-2">
+              <div className="rounded-md border">
+                <div className="flex items-center justify-center p-5">
+                  <span className="text-4xl font-bold">3</span>
                 </div>
               </div>
             </div>
@@ -99,28 +99,28 @@ export const WithIndicator: Story = {
       <Carousel>
         <CarouselContent>
           <CarouselItem className="basis-1/4 md:basis-1/2">
-            <div className='p-2'>
-              <div className='rounded-md border'>
-                <div className='flex items-center justify-center p-5'>
-                    <span className='text-4xl font-bold'>1</span>
+            <div className="p-2">
+              <div className="rounded-md border">
+                <div className="flex items-center justify-center p-5">
+                  <span className="text-4xl font-bold">1</span>
                 </div>
               </div>
             </div>
           </CarouselItem>
           <CarouselItem className="basis-1/4 md:basis-1/2">
-            <div className='p-2'>
-              <div className='rounded-md border'>
-                <div className='flex items-center justify-center p-5'>
-                    <span className='text-4xl font-bold'>2</span>
+            <div className="p-2">
+              <div className="rounded-md border">
+                <div className="flex items-center justify-center p-5">
+                  <span className="text-4xl font-bold">2</span>
                 </div>
               </div>
             </div>
           </CarouselItem>
           <CarouselItem className="basis-1/4 md:basis-1/2">
-            <div className='p-2'>
-              <div className='rounded-md border'>
-                <div className='flex items-center justify-center p-5'>
-                    <span className='text-4xl font-bold'>3</span>
+            <div className="p-2">
+              <div className="rounded-md border">
+                <div className="flex items-center justify-center p-5">
+                  <span className="text-4xl font-bold">3</span>
                 </div>
               </div>
             </div>
@@ -138,7 +138,7 @@ export const BasisExamples: Story = {
   render: () => (
     <div className="space-y-8">
       {/* Basis 1/2 - 2 items per row */}
-      <div className='mb-15'>
+      <div className="mb-15">
         <h3 className="mb-4 text-lg font-semibold">Basis 1/2 (2 items per row)</h3>
         <Carousel>
           <CarouselContent>
@@ -160,7 +160,7 @@ export const BasisExamples: Story = {
       </div>
 
       {/* Basis 1/3 - 3 items per row */}
-      <div className='mb-15'>
+      <div className="mb-15">
         <h3 className="mb-4 text-lg font-semibold">Basis 1/3 (3 items per row)</h3>
         <Carousel>
           <CarouselContent>
@@ -183,7 +183,7 @@ export const BasisExamples: Story = {
       </div>
 
       {/* Basis 1/4 - 4 items per row */}
-      <div className='mb-15'>
+      <div className="mb-15">
         <h3 className="mb-4 text-lg font-semibold">Basis 1/4 (4 items per row)</h3>
         <Carousel>
           <CarouselContent>
@@ -206,7 +206,7 @@ export const BasisExamples: Story = {
       </div>
 
       {/* Basis 1/5 - 5 items per row */}
-      <div className='mb-15'>
+      <div className="mb-15">
         <h3 className="mb-4 text-lg font-semibold">Basis 1/5 (5 items per row)</h3>
         <Carousel>
           <CarouselContent>
@@ -229,7 +229,7 @@ export const BasisExamples: Story = {
       </div>
 
       {/* Mixed Basis Sizes */}
-      <div className='mb-15'>
+      <div className="mb-15">
         <h3 className="mb-4 text-lg font-semibold">Mixed Basis Sizes</h3>
         <Carousel>
           <CarouselContent>
