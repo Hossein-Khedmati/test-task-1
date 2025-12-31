@@ -9,7 +9,7 @@ const config: StorybookConfig = {
     '@storybook/addon-themes',
     '@storybook/addon-links',
     '@storybook/addon-jest',
-    'storybook-dark-mode',
+    // 'storybook-dark-mode',
   ],
   framework: {
     name: '@storybook/nextjs',

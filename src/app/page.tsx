@@ -1,3 +1,10 @@
+import { HomeFeature } from '@/features/home/components';
+
 export default function Home() {
-  return <h1>ETMIFY V2</h1>;
+  return (
+    <div>
+      <h1 className="mt-4 flex flex-row justify-center">ETMIFY V2</h1>
+      <HomeFeature />
+    </div>
+  );
 }

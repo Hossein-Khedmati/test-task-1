@@ -41,26 +41,54 @@
   --color-neutral-700: #374151;
   --color-neutral-800: #1f2937;
   --color-neutral-900: #111827;
-  --color-success-50: #f0faf4;
-  --color-success-100: #dcf0e5;
-  --color-success-200: #5fb590;
-  --color-success-300: #5fb590;
-  --color-success-400: #10b981;
-  --color-info-50: #eff6ff;
-  --color-info-100: #dbeafe;
-  --color-info-200: #93c5fd;
-  --color-info-300: #60a5fa;
-  --color-info-400: #3b82f6;
-  --color-warning-50: #fffdf0;
-  --color-warning-100: #fef3c7;
-  --color-warning-200: #fcd34d;
-  --color-warning-300: #fbbf24;
-  --color-warning-400: #f59e0b;
-  --color-error-50: #fff5f5;
-  --color-error-100: #fee2e2;
-  --color-error-200: #fca5a5;
-  --color-error-300: #f87171;
-  --color-error-400: #ef4444;
+  --color-success-50: #cff1e6;
+  --color-success-100: #afe8d5;
+  --color-success-200: #87dcc0;
+  --color-success-300: #60d0ab;
+  --color-success-400: #38c596;
+  --color-success-500: #10b981;
+  --color-success-600: #0d9a6b;
+  --color-success-700: #0b7b56;
+  --color-success-800: #085d41;
+  --color-success-900: #053e2b;
+  --color-info-50: #d8e6fd;
+  --color-info-100: #bed5fc;
+  --color-info-200: #9dc0fa;
+  --color-info-300: #7cacf9;
+  --color-info-400: #5c97f7;
+  --color-info-500: #3b82f6;
+  --color-info-600: #316ccd;
+  --color-info-700: #2757a4;
+  --color-info-800: #1d417b;
+  --color-info-900: #142b52;
+  --color-warning-50: #fdecce;
+  --color-warning-100: #fcdfae;
+  --color-warning-200: #face85;
+  --color-warning-300: #f8be5c;
+  --color-warning-400: #f7ae34;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #cc8409;
+  --color-warning-700: #a36907;
+  --color-warning-800: #7a4f05;
+  --color-warning-900: #523504;
+  --color-error-50: #fcdada;
+  --color-error-100: #fac1c1;
+  --color-error-200: #f7a1a1;
+  --color-error-300: #f48282;
+  --color-error-400: #f26363;
+  --color-error-500: #ef4444;
+  --color-error-600: #c73939;
+  --color-error-700: #9f2d2d;
+  --color-error-800: #772222;
+  --color-error-900: #501717;
+
+  --color-primary: var(--color-primary-500);
+  --color-secondary: var(--color-secondary-500);
+  --color-success: var(--color-success-500);
+  --color-info: var(--color-info-500);
+  --color-warning: var(--color-warning-500);
+  --color-error: var(--color-error-500);
+  --color-neutral: var(--color-neutral-500);
 
   --radius-xxs: 4px;
   --radius-xs: 6px;
@@ -102,31 +130,51 @@
   --neutral-200: #e5e7eb;
   --neutral-300: #d1d5db;
   --neutral-400: #9ca3af;
-  --neutral-500: #6b7280;
+  --neutral-500: #6b7280; /*base*/
   --neutral-600: #4b5563;
   --neutral-700: #374151;
   --neutral-800: #1f2937;
   --neutral-900: #111827;
-  --success-50: #f0faf4;
-  --success-100: #dcf0e5;
-  --success-200: #5fb590;
-  --success-300: #5fb590;
-  --success-400: #10b981;
-  --info-50: #eff6ff;
-  --info-100: #dbeafe;
-  --info-200: #93c5fd;
-  --info-300: #60a5fa;
-  --info-400: #3b82f6;
-  --warning-50: #fffdf0;
-  --warning-100: #fef3c7;
-  --warning-200: #fcd34d;
-  --warning-300: #fbbf24;
-  --warning-400: #f59e0b;
-  --error-50: #fff5f5;
-  --error-100: #fee2e2;
-  --error-200: #fca5a5;
-  --error-300: #f87171;
-  --error-400: #ef4444;
+  --success-50: #cff1e6;
+  --success-100: #afe8d5;
+  --success-200: #87dcc0;
+  --success-300: #60d0ab;
+  --success-400: #38c596;
+  --success-500: #10b981; /*base*/
+  --success-600: #0d9a6b;
+  --success-700: #0b7b56;
+  --success-800: #085d41;
+  --success-900: #053e2b;
+  --info-50: #d8e6fd;
+  --info-100: #bed5fc;
+  --info-200: #9dc0fa;
+  --info-300: #7cacf9;
+  --info-400: #5c97f7;
+  --info-500: #3b82f6; /*base*/
+  --info-600: #316ccd;
+  --info-700: #2757a4;
+  --info-800: #1d417b;
+  --info-900: #142b52;
+  --warning-50: #fdecce;
+  --warning-100: #fcdfae;
+  --warning-200: #face85;
+  --warning-300: #f8be5c;
+  --warning-400: #f7ae34;
+  --warning-500: #f59e0b; /*base*/
+  --warning-600: #cc8409;
+  --warning-700: #a36907;
+  --warning-800: #7a4f05;
+  --warning-900: #523504;
+  --error-50: #fcdada;
+  --error-100: #fac1c1;
+  --error-200: #f7a1a1;
+  --error-300: #f48282;
+  --error-400: #f26363;
+  --error-500: #ef4444; /*base*/
+  --error-600: #c73939;
+  --error-700: #9f2d2d;
+  --error-800: #772222;
+  --error-900: #501717;
 }
 
 .dark {
@@ -144,5 +192,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .container {
+    @apply w-full max-w-[1440px]! px-5 md:mx-auto md:px-13;
   }
 }

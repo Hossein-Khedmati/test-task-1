@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import { dana, poppins } from '@/config/fonts/fonts';
 import { env } from '@/config/env';
 import { ThemeProvider } from 'next-themes';
@@ -6,6 +7,14 @@ import { ThemeProvider } from 'next-themes';
 export const metadata: Metadata = {
   title: 'Etmify V2',
   description: '',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -21,15 +30,13 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
-      <head>
-        {env.NODE_ENV === 'development' && (
-          <script crossOrigin="anonymous" src="//unpkg.com/react-scan/dist/auto.global.js" />
-        )}
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+      {env.NODE_ENV === 'development' && (
+        <Script
+          crossOrigin="anonymous"
+          src="//unpkg.com/react-scan/dist/auto.global.js"
+          strategy="afterInteractive"
         />
-      </head>
+      )}
       <body className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}

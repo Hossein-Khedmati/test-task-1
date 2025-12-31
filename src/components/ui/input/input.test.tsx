@@ -127,7 +127,14 @@ describe('Input Component', () => {
     const initialValue = 'hi';
     const TestingOnChange = () => {
       const [value, setValue] = React.useState(initialValue);
-      return <Input value={value} onValueChange={(event: any) => setValue(event.target.value)} />;
+      return (
+        <Input
+          value={value}
+          onValueChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+            setValue(event.target.value)
+          }
+        />
+      );
     };
     render(<TestingOnChange />);
     const inputElement = screen.getByRole('textbox');
