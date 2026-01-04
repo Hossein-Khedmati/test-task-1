@@ -4,3 +4,6 @@ export * from './button';
 export * from './select';
 export * from './carousel';
 export * from './card';
+export * from './sheet';
+export * from './accordion';
+export * from './navigation-menu';

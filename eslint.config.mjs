@@ -8,6 +8,7 @@ export default [
   {
     rules: {
       'prettier/prettier': ['error', { endOfLine: 'auto' }, { usePrettierrc: true }],
+      'react/prop-types': 'off',
     },
   },
 ];

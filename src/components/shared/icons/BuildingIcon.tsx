@@ -1,0 +1,72 @@
+import * as React from 'react';
+import type { SVGProps } from 'react';
+
+const BuildingIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M1 22H23"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeMiterlimit={10}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M19.7803 22.01V17.55"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeMiterlimit={10}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M19.7996 10.89C18.5796 10.89 17.5996 11.87 17.5996 13.09V15.36C17.5996 16.58 18.5796 17.56 19.7996 17.56C21.0196 17.56 21.9996 16.58 21.9996 15.36V13.09C21.9996 11.87 21.0196 10.89 19.7996 10.89Z"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeMiterlimit={10}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M2.09961 22V6.03003C2.09961 4.02003 3.09966 3.01001 5.08966 3.01001H11.3196C13.3096 3.01001 14.2996 4.02003 14.2996 6.03003V22"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeMiterlimit={10}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.7998 8.25H10.7498"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeMiterlimit={10}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.7998 12H10.7498"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeMiterlimit={10}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M8.25 22V18.25"
+      stroke="currentColor"
+      strokeWidth={1.5}
+      strokeMiterlimit={10}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export default BuildingIcon;

@@ -1,0 +1,20 @@
+import * as React from 'react';
+import type { SVGProps } from 'react';
+
+const StartIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    width="1em"
+    height="1em"
+    viewBox="0 0 16 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M7.60938 0L9.25517 5.73475L15.2178 5.52786L10.2723 8.86525L12.3117 14.4721L7.60938 10.8L2.90709 14.4721L4.94642 8.86525L0.00092268 5.52786L5.96358 5.73475L7.60938 0Z"
+      fill="#F59E0B"
+    />
+  </svg>
+);
+
+export default StartIcon;

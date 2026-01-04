@@ -1,0 +1,19 @@
+@layer components {
+  .switch {
+    @apply data-[state=checked]:bg-primary-500 inline-flex h-[26px] w-[48px] shrink-0 items-center rounded-full border border-transparent shadow-xs transition-all outline-none disabled:cursor-not-allowed disabled:opacity-50 data-[state=unchecked]:bg-neutral-200 dark:data-[state=unchecked]:bg-neutral-700;
+  }
+
+  .thumb {
+    @apply bg-neutral-0 pointer-events-none flex size-[20px] items-center justify-center rounded-full ring-0 transition-transform;
+  }
+
+  /* LTR thumb */
+  .thumb.ltr {
+    @apply data-[state=checked]:translate-x-[calc(100%+4px)] data-[state=unchecked]:translate-x-[2px];
+  }
+
+  /* RTL thumb */
+  .thumb.rtl {
+    @apply data-[state=checked]:translate-x-[-24px] data-[state=unchecked]:translate-x-[calc(100%-22px)];
+  }
+}
